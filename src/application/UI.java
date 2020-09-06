@@ -49,6 +49,9 @@ public class UI {
 	public static ChessPosition readChessPosition(Scanner sc) {
 		try {
 			String s = sc.nextLine();
+			if (s == "f6") {
+				System.out.println("debug");
+			}
 			char column = s.charAt(0);
 			int row  = Integer.parseInt(s.substring(1));
 			return new ChessPosition(column, row);
